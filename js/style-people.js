@@ -6,7 +6,7 @@ async function showActor(page) {
     console.log(dataPeople);
     dataPeople.results.forEach((element) => {
         listPeople.innerHTML += `<a href="detail-actor.html?id=${element.id}" class="card-film">
-        <img src="https://image.tmdb.org/t/p/w300${element.profile_path}
+        <img src="${element.profile_path ? `https://image.tmdb.org/t/p/w300${element.profile_path}` : "img/screen.jpg"}
         " alt="img" />
         <div class="content-film">
             <p class="title-film">${element.name}</p>

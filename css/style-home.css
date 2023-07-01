@@ -364,7 +364,7 @@
 }
 @media (max-width: 767px) {
     .listMovies .list .card-film {
-        min-width: 43%;
+        min-width: 40%;
     }
 }
 @media (max-width: 679px) {

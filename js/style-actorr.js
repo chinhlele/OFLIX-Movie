@@ -60,7 +60,7 @@ async function filmActor() {
     let dataFilmActor = await getData(`https://api.themoviedb.org/3/person/${idActor}/movie_credits?api_key=${API_KEY}`);
     dataFilmActor.cast.forEach((element) => {
         actorMovie.innerHTML += `<a href="detail-film.html?id=${element.id}" class="card-film">
-        <img src="https://image.tmdb.org/t/p/w300${element.poster_path}" alt="img" />
+        <img src="${element.poster_path ? `https://image.tmdb.org/t/p/w300${element.poster_path}` : "img/screen.jpg"}" alt="img" />
         <div class="content-film">
             <p class="title-film">${element.title ? element.title : element.original_name}</p>
             <ul>

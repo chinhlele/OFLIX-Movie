@@ -163,6 +163,9 @@
     .card-film {
         min-width: 40%;
     }
+    .detail-actor .right-actor .info-title {
+        margin-right: 0;
+    }
 }
 @media (max-width: 425px) {
     .detail-actor .right-actor h3 {

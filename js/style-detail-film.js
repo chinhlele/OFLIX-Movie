@@ -5,6 +5,8 @@ let imgDetailFilm = document.querySelector(".detail-film .left-film img");
 let playTrailer = document.querySelector(".play-film");
 let popup = document.querySelector(".popup-trailer");
 let recommend = document.querySelector(".recommend");
+let titleCast = document.querySelector(".title-cast");
+let listCast = document.querySelector(".list-cast");
 const url = new URL(window.location.href);
 const id = url.searchParams.get("id");
 const type = url.searchParams.get("type");
@@ -63,13 +65,18 @@ showDetail();
 async function showActor() {
     let listCast = document.querySelector(".right-film .list-cast");
     let dataActor = await getData(`https://api.themoviedb.org/3/${type}/${id}/credits?api_key=${API_KEY}`);
-    dataActor.cast.forEach((element) => {
-        listCast.innerHTML += `<a href="detail-actor.html?id=${element.id}" class="actor"
-        ><img src=${element.profile_path ? `https://image.tmdb.org/t/p/w300${element.profile_path}` : "img/avatar.png"} alt="img" />
-        <p class="name-cast">${element.character}</p>
-        <p>Jeff Morales (voice)</p>
-    </a>`;
-    });
+    if (dataActor.cast.length == "") {
+        titleCast.style.display = "none";
+        listCast.style.display = "none";
+    } else {
+        dataActor.cast.forEach((element) => {
+            listCast.innerHTML += `<a href="detail-actor.html?id=${element.id}" class="actor"
+            ><img src=${element.profile_path ? `https://image.tmdb.org/t/p/w300${element.profile_path}` : "img/avatar.png"} alt="img" />
+            <p class="name-cast">${element.character}</p>
+            <p>Jeff Morales (voice)</p>
+        </a>`;
+        });
+    }
 }
 showActor();
 

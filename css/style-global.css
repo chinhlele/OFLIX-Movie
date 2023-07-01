@@ -487,6 +487,11 @@ li {
 
 /* responsive---> */
 
+@media (max-width: 1199px) {
+    .list-tv-shows .list .card-film .content-film {
+        display: none;
+    }
+}
 @media (max-width: 991px) {
     .header {
         padding: 20px 0;

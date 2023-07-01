@@ -197,6 +197,7 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(11.8px);
     -webkit-backdrop-filter: blur(11.8px);
+    overflow: hidden;
 }
 .recommend .list-review img {
     width: 100px;
@@ -363,6 +364,9 @@ iframe {
     .detail-film .right-film h3 {
         font-size: 32px;
         line-height: 48px;
+    }
+    .detail-film .right-film .genre .text-genre {
+        width: 100%;
     }
 }
 @media (max-width: 600px) {
