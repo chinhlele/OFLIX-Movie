@@ -1,0 +1,130 @@
+.banner-02 {
+    color: white;
+    padding: 145px 0 65px;
+    background-image: url("../img/3185113.jpg");
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    height: 400px;
+}
+.banner-02 h3 {
+    font-size: 70px;
+    font-weight: 600;
+}
+.banner-02::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+        180deg,
+        hsla(0, 0%, 8%, 0) 0,
+        hsla(0, 0%, 8%, 0.15) 15%,
+        hsla(0, 0%, 8%, 0.35) 29%,
+        hsla(0, 0%, 8%, 0.58) 44%,
+        #141414 68%,
+        #141414
+    );
+}
+.list-tv-shows {
+    transform: translateY(-80px);
+}
+.list-tv-shows .list {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.list-tv-shows .list a {
+    color: white;
+}
+.list-tv-shows .list .card-film {
+    width: calc(100% / 4 - 23px);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    min-width: 20%;
+}
+.list-tv-shows .list .card-film::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+.list-tv-shows .list .card-film:hover::after {
+    opacity: 1;
+}
+.list-tv-shows .list .card-film .content-film {
+    padding: 10px;
+    /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 70%, transparent); */
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    transition: 0.3s;
+    z-index: 3;
+}
+.list-tv-shows .list .card-film:hover .content-film {
+    top: 0;
+}
+.list-tv-shows .list .card-film .content-film .title-film {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.list-tv-shows .list .card-film .content-film ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-tv-shows .list .card-film .content-film ul li {
+    color: rgb(210, 210, 210);
+}
+.list-tv-shows .list .card-film .content-film ul .star {
+    font-size: 20px;
+}
+.list-tv-shows .list .card-film .content-film ul .star i {
+    color: rgb(255, 234, 0);
+    font-size: 14px;
+}
+.show {
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.show button {
+    color: white;
+    padding: 10px 40px;
+    border-radius: 100px;
+    border: 1px solid gray;
+    background-color: transparent;
+    font-weight: 100;
+    transition: 0.3s;
+}
+.show button:hover {
+    background-color: gray;
+}
+@media (max-width: 991px) {
+    .list-tv-shows .list .card-film {
+        width: calc(100% / 3 - 20px);
+    }
+}
+@media (max-width: 575px) {
+    .list-tv-shows .list .card-film {
+        width: calc(100% / 2 - 15px);
+    }
+    .banner-02 h3 {
+        font-size: 50px;
+    }
+}

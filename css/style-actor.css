@@ -1,0 +1,183 @@
+.detail-actor {
+    padding: 100px 0;
+    color: white;
+}
+.detail-actor .container {
+    display: flex;
+    gap: 40px;
+}
+.detail-actor .left-actor {
+    width: 35%;
+}
+.detail-actor .left-actor img {
+    border-radius: 10px;
+}
+.detail-actor .right-actor {
+    width: 65%;
+}
+.detail-actor .right-actor h3 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.detail-actor .right-actor .info-actor {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.detail-actor .right-actor .sub-info {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.detail-actor .right-actor .sub-info .text {
+    letter-spacing: 0.5px;
+    font-weight: 300;
+}
+.detail-actor .right-actor .info-title {
+    margin-right: 10px;
+    color: gray;
+    font-weight: 100;
+}
+.detail-actor .right-actor .also-know {
+    margin-bottom: 20px;
+}
+.detail-actor .right-actor .also-know .text-also {
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+.detail-actor .right-actor .biography .text-biography {
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.list-film-movie {
+    padding: 100px 0;
+}
+.list-film-movie .title-film-actor {
+    color: white;
+    margin-bottom: 50px;
+}
+.list-film-movie .title-film-actor p {
+    font-size: 15px;
+    color: red;
+}
+.list-film-movie .title-film-actor h3 {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.list-film-movie .actor-in-the-movie {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+}
+.list-film-movie .actor-in-the-movie::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(255, 255, 255, 0.634);
+    border-radius: 10px;
+    height: 1px;
+}
+.list-film-movie .actor-in-the-movie::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 10px;
+}
+.actor-in-the-movie a {
+    color: white;
+}
+.showTitle {
+    color: gray;
+    font-weight: 100;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+.showTitle:hover {
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .detail-actor {
+        padding-bottom: 0;
+    }
+    .detail-actor .container {
+        display: block;
+    }
+    .detail-actor .left-actor {
+        margin: 0 auto;
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    .detail-actor .right-actor {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .detail-actor .right-actor h3 {
+        text-align: center;
+    }
+    .detail-actor .right-actor .info-actor {
+        justify-content: center;
+    }
+    .detail-actor .right-actor .also-know {
+        text-align: center;
+    }
+    .biography {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .detail-actor .right-actor .biography .text-biography {
+        text-align: justify;
+    }
+    .card-film .content-film {
+        display: none;
+    }
+    .detail-actor .right-actor .biography .text-biography {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+    .showTitle {
+        display: block;
+        margin: 20px auto 0;
+    }
+    .detail-actor .right-actor .biography .text-biography.active {
+        -webkit-line-clamp: unset;
+    }
+}
+@media (max-width: 767px) {
+    .detail-actor .right-actor .info-actor {
+        display: block;
+    }
+    .detail-actor .right-actor .sub-info {
+        justify-content: center;
+    }
+    .card-film {
+        min-width: 40%;
+    }
+}
+@media (max-width: 425px) {
+    .detail-actor .right-actor h3 {
+        font-size: 50px;
+    }
+    .detail-actor .right-actor .sub-info {
+        display: block;
+        text-align: center;
+    }
+    .card-film {
+        min-width: 65%;
+    }
+}
+@media (max-width: 365px) {
+    .detail-actor .right-actor h3 {
+        font-size: 35px;
+    }
+}
