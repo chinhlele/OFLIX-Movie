@@ -293,7 +293,7 @@ iframe {
 }
 @media (max-width: 991px) {
     .detail-film {
-        padding-top: 150px;
+        padding-top: 90px;
         height: unset;
     }
     .detail-film .container {
@@ -345,13 +345,11 @@ iframe {
         text-align: center;
     }
     .detail-film .right-film .genre .title-genre {
-        margin: 0 auto;
+        width: unset;
+        text-align: center;
     }
     .detail-film .right-film .overview {
         display: block;
-    }
-    .detail-film .right-film .genre .text-genre {
-        margin: 0 auto;
     }
     .detail-film .right-film .overview .text-over {
         margin: 0 auto;
@@ -359,10 +357,11 @@ iframe {
         margin-bottom: 50px;
     }
     .detail-film .right-film .overview .title-over {
-        margin: 0 auto;
+        text-align: center;
+        width: unset;
     }
     .detail-film .right-film h3 {
-        font-size: 40px;
+        font-size: 32px;
         line-height: 48px;
     }
 }
