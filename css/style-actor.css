@@ -33,7 +33,7 @@
 }
 .detail-actor .right-actor .sub-info .text {
     letter-spacing: 0.5px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .detail-actor .right-actor .info-title {
     margin-right: 10px;
@@ -49,13 +49,13 @@
     letter-spacing: 0.5px;
 }
 .detail-actor .right-actor .biography .text-biography {
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.5px;
 }
 
 .list-film-movie {
-    padding: 100px 0;
+    padding: 40px 0;
 }
 .list-film-movie .title-film-actor {
     color: white;

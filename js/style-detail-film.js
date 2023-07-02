@@ -7,6 +7,7 @@ let popup = document.querySelector(".popup-trailer");
 let recommend = document.querySelector(".recommend");
 let titleCast = document.querySelector(".title-cast");
 let listCast = document.querySelector(".list-cast");
+let textOver = document.querySelector(".text-over");
 const url = new URL(window.location.href);
 const id = url.searchParams.get("id");
 const type = url.searchParams.get("type");
@@ -55,7 +56,11 @@ async function showDetail() {
         </div>
         <div class="overview">
             <p class="title-over">Overview :</p>
-            <p class="text-over">${dataFilm.overview}</p>
+            <p class="text-over">${
+                dataFilm.overview
+                    ? dataFilm.overview
+                    : "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s. "
+            }</p>
         </div>`;
 }
 showDetail();

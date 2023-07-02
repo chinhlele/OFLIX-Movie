@@ -76,6 +76,7 @@
 .detail-film .right-film ul li {
     font-weight: 100;
     letter-spacing: 0.5px;
+    font-weight: 400;
 }
 .detail-film .right-film ul li i {
     margin-right: 10px;
@@ -95,6 +96,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 12px;
 }
 .detail-film .right-film ul li:nth-child(2) {
     color: gray;
@@ -105,6 +107,7 @@
 .detail-film .right-film .slogan {
     font-weight: 200;
     letter-spacing: 0.5px;
+    font-weight: 400;
 }
 .detail-film .right-film .genre {
     display: flex;
@@ -118,6 +121,7 @@
 }
 .detail-film .right-film .genre .text-genre {
     width: 85%;
+    font-weight: 400;
 }
 .detail-film .right-film .overview {
     display: flex;
@@ -132,6 +136,7 @@
     line-height: 22.4px;
     letter-spacing: 0.5px;
     width: 85%;
+    font-weight: 400;
 }
 .detail-film .right-film .list-cast {
     display: flex;
@@ -160,14 +165,19 @@
 .detail-film .right-film .list-cast .actor p:last-child {
     font-weight: 100;
     font-size: 12px;
+    color: gray;
 }
 .detail-film .right-film .list-cast .actor img {
     border-radius: 10px;
     width: 100%;
 }
+.detail-film .right-film .title-cast {
+    font-size: 30px;
+    font-weight: 500;
+}
 .recommend {
     background-color: rgb(30, 30, 30);
-    padding: 30px 0;
+    padding-top: 40px;
 }
 .recommend .title-recom p:first-child {
     font-size: 14px;
@@ -313,6 +323,7 @@ iframe {
     .detail-film .right-film ul {
         justify-content: center;
     }
+
     .detail-film .right-film .slogan {
         text-align: center;
     }
