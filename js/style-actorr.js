@@ -47,7 +47,11 @@ async function showDetailActor() {
     <div class="biography">
         <p class="title-biography info-title">Biography :</p>
         <p class="text-biography">
-        ${dataActor.biography}
+        ${
+            dataActor.biography
+                ? dataActor.biography
+                : "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        }
         </p>
         <button class="showTitle" onclick="showTit(event)">Show more</button>
     </div>
